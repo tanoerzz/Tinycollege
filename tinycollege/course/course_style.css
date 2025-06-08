@@ -1,0 +1,159 @@
+/* Body Styles - Unchanged */
+body {
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Style - Unchanged */
+h1, h2, h3 {
+    color: #5eead4;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h2 {
+    border-bottom: 2px solid #2c2f42;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* Improved Form Structure - Same Colors */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #f0f0f0;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Form Inputs and Buttons - Same Colors */
+form input, 
+form select, 
+form textarea {
+    padding: 12px;
+    margin: 0; /* Changed from 8px 0 */
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #2a2a3a;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    outline: none;
+    border-color: #5eead4;
+    box-shadow: 0 0 0 2px rgba(94, 234, 212, 0.2);
+}
+
+form button {
+    padding: 12px 24px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #5eead4;
+    color: #1e1e2f;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    align-self: flex-start; /* Added for better button alignment */
+}
+
+form button:hover {
+    background-color: #4dd4c4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* Table Styles - Unchanged */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3a3a4a;
+}
+
+th {
+    background-color: #2a2a3a;
+    color: #5eead4;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #2c2f42;
+}
+
+tr:hover {
+    background-color: #3a3d52;
+}
+
+/* Link Styles - Unchanged */
+a {
+    color: #5eead4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #7af0dc;
+    text-decoration: underline;
+}
+
+/* Container - Fixed padding from 1000px to 20px */
+.container {
+    background-color: 1e1e2f;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+/* Responsive adjustments - Unchanged */
+@media (max-width: 1000px) {
+    body {
+        padding: 15px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+}
